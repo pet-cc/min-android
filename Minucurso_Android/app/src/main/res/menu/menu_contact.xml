@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_contact_search"
+        android:icon="@drawable/ic_search"
+        android:title="Procurar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_contact_invite_friend"
+        android:title="Convidar um amigo"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/menu_contact_contacts"
+        android:title="Contatos"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/menu_contact_reload"
+        android:title="Atualizar"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/menu_contact_help"
+        android:title="Ajuda"
+        app:showAsAction="withText" />
+</menu>

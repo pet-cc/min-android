@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_novogrupo"
+        android:orderInCategory="1"
+        android:title="Novo Grupo" />
+
+    <item
+        android:id="@+id/item_novatransmissao"
+        android:orderInCategory="2"
+        android:title="Novo Transmissão" />
+
+    <item
+        android:id="@+id/item_whatsappweb"
+        android:orderInCategory="4"
+        android:title="WhatsApp Web" />
+
+    <item
+        android:id="@+id/item_msgsfavoritas"
+        android:orderInCategory="4"
+        android:title="Mensagens Favoritas" />
+
+    <item
+        android:id="@+id/item_configuracoes"
+        android:orderInCategory="5"
+        android:title="Configurações" />
+
+    <item
+        android:id="@+id/item_pesquisar"
+        android:orderInCategory="4"
+        android:title="Pesquisar"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_search"/>
+
+</menu>
