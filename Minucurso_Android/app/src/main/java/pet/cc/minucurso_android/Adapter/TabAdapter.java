@@ -10,12 +10,12 @@ import pet.cc.minucurso_android.Fragment.ChamadasFragment;
 import pet.cc.minucurso_android.Fragment.StatusFragment;
 
 public class TabAdapter extends FragmentStatePagerAdapter {
-
+    //O FragmentStatePagerAdapter vai nos obrigar a sobrescrever dois métodos,
+    //@getItem( ) <- que vai retornar uma instancia de um Fragment a ser carregado no viewPager
+    //@getCount( ) <- retorna a quantidade de tabs
     private int countTabs;
-
     public TabAdapter(FragmentManager fm, int countTabs) {
         super(fm);
-
         this.countTabs = countTabs;
     }
 

@@ -20,7 +20,7 @@
     <item
         android:id="@+id/item_msgsfavoritas"
         android:orderInCategory="4"
-        android:title="Mensagens Favoritas" />
+        android:title="Mensagens Favoritas"  />
 
     <item
         android:id="@+id/item_configuracoes"

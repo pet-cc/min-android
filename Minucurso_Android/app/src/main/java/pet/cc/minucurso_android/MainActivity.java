@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText etCelular = findViewById(R.id.etCelular);
+        final EditText etCelular = findViewById(R.id.etNumero);
 
         Button bEntrar = findViewById(R.id.bEntrar);
         bEntrar.setOnClickListener(new View.OnClickListener() {

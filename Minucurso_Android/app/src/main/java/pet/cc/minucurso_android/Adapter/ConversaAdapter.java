@@ -68,9 +68,7 @@ public class ConversaAdapter extends RecyclerView.Adapter<ConversaAdapter.ViewHo
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
             ivPerfil = itemView.findViewById(R.id.ivPerfil);
-
             tvTitulo  = itemView.findViewById(R.id.tvTitulo);
             tvPrevia  = itemView.findViewById(R.id.tvPrevia);
             tvHora    = itemView.findViewById(R.id.tvHora);

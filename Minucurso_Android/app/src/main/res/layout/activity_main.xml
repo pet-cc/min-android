@@ -5,30 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/ivLogo"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="16dp"
-        android:foregroundGravity="center" />
-
+        android:layout_marginTop="70dp"/>
     <EditText
-        android:id="@+id/etCelular"
+        android:id="@+id/etNumero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/app_name"/>
-
+        android:layout_marginTop="20dp"
+        android:hint="Número"
+        android:inputType="number"/>
     <Button
         android:id="@+id/bEntrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="Entrar" />
+        android:layout_marginTop="10dp"
+        android:text="Entrar"/>
 
 </LinearLayout>
