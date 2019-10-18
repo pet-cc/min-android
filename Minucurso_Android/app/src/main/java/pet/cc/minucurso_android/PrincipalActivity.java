@@ -35,10 +35,28 @@ public class PrincipalActivity extends AppCompatActivity {
         //Para que a viewPager e o Adapter conversem entre si, é preciso criar um adapter e passá-lo ao viewPager
         //Seta o tabAdapter ao viewPager (fazendo a vinculação a esses dois)
         viewPager.setAdapter(tabAdapter);
-
+        //Listener vinculado ao viewPager que fica escutando quando o usuário desliza a tela
+        //Cria uma Thread diferente para que isso seja possível
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
+        //Adicionar o Listener de Seleção para as Tabs
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                //Seta ao viewPager qual Fragment vai ser carregado
+                viewPager.setCurrentItem(tab.getPosition());
+            }
 
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
 
         FloatingActionButton bContatos = findViewById(R.id.bContatos);
         bContatos.setOnClickListener(new View.OnClickListener() {
